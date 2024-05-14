@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test"
+        tools:targetApi="31">
+        <activity
+            android:name=".users.reclamation"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.About"
+            android:exported="false" />
+        <activity
+            android:name=".users.reclamationtel.SMSActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.reclamationmail.EmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.reclamationQr.SendMail"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".users.reclamationQr.barecode"
+            android:exported="false" />
+        <activity
+            android:name=".users.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.DetailsProduct"
+            android:exported="false" />
+        <activity
+            android:name=".users.ProdutsUsers"
+            android:exported="false" />
+        <activity
+            android:name=".users.HomeCategorieUsers"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.HomeCategorie"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.Categoryupload"
+            android:exported="false"
+            android:theme="@style/Theme.UploadActivity" />
+        <activity
+            android:name=".ADMIN.HomeA"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.SignUpActivityA"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.LoginAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.UploadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ADMIN.Produts"
+            android:exported="false" />
+        <activity
+            android:name=".users.Home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Test" />
+        <activity
+            android:name=".ADMIN.Welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".users.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".users.MainActivity"
+            android:exported="false" /> <!-- Ajout de l'activité du deuxième manifeste -->
+        <activity
+            android:name=".users.reclamationQr.QR"
+            android:exported="false" />
+    </application>
+
+</manifest>

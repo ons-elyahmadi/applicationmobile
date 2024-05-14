@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_home">Home</string>
+    <string name="login_as_user">Login As User</string>
+    <string name="login_as_admin">Login As Admin</string>
+    <string name="scan_barcode" />
+
+</resources>

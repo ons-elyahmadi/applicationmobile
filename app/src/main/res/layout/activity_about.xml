@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.About"
+    android:background="@drawable/k">
+
+    <TextView
+        android:id="@+id/mmm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+        android:text="Support Palestine. Boycott Israel. Stand with the Palestinians during their fight for freedom, justice, and equality."
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mmm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="390dp"
+        android:text="PLEASE NOTE:\n\nThis list is not complete and is constantly being updated. If you know about a brand that should be on the list, please create an account with us then you can add some more. Thanks for your support.\n\nYou can also make a claim for new brands and consult product and category descriptions."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
